@@ -37,35 +37,36 @@
         background-color: #F7213E;
         border-radius: 5px;
     }
-    &__next {
-        padding: 0 0 0 0;
-        background-color: #FFFFFF;
-        width: 48px;
-        height: 48px;
-        border-radius: 100%;
-        background-image: url('../img/hero/slider-arrow.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        transform: rotate(-180deg);
-    }
-    &__next::after {
-        position: absolute;
-        content: '';
-    }
-    &__prev {
-        padding: 0 0 0 0;
-        background-color: #FFFFFF;
-        width: 48px;
-        height: 48px;
-        border-radius: 100%;
-        background-image: url('../img/hero/slider-arrow.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    &__prev::after {
-        position: absolute;
-        content: '';
-    }
+    
+}
+.slider-btn-next {
+    padding: 0 0 0 0;
+    background-color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-image: url('../img/hero/slider-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-180deg);
+}
+.slider-btn-next::after {
+    position: absolute;
+    content: '';
+}
+.slider-btn-prev {
+    padding: 0 0 0 0;
+    background-color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-image: url('../img/hero/slider-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-btn-prev::after {
+    position: absolute;
+    content: '';
 }
 .hero-swiper {
     position: relative;

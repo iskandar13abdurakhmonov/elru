@@ -17,3 +17,12 @@ var popularSlider = new Swiper('.popular-swiper', {effect: 'slide',
     prevEl: '.swiper-button-prev',
   },
 });
+
+var selectionSlider = new Swiper('.selection-swiper', {effect: 'slide',
+  cssMode: true,
+  slidesPerView: 4,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
