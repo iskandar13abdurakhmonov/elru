@@ -1,0 +1,148 @@
+.popular {
+    padding: 47px 0 0 0;
+}
+.main-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head-popular {
+    margin: 0 0 8px 0;
+}
+.main-head__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #3E4549;
+}
+.main-head__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 117%;
+    color: #01BEDE;
+}
+.swiper-popular {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+.popular-swiper {
+    position: relative;
+}
+.popular-button-prev {
+    position: absolute;
+    left: -25px;
+    top: 195px;
+}
+.popular-button-next {
+    position: absolute;
+    right: -25px;
+    top: 195px;
+}
+.popular-slide {
+    max-width: 205px;
+}
+.main-popular {
+    &__item {
+        max-height: 389px;
+    }
+
+    &__article {
+        height: 100%;
+    }
+}
+.popular-article {
+    display: flex;
+    flex-direction: column;
+
+    &__bg {
+        position: relative;
+    }
+
+    &__content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__bottom {
+        margin-top: auto;
+    }
+
+    // &__img {
+    //     position: relative;
+    // }
+
+    &__text-red {
+        padding: 5px 22px 4px 10px;
+        position: absolute;
+        bottom: 43px;
+        left: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 121%;
+        color: #FFFFFF;
+        background-color: #D64C4C;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    &__text-green {
+        padding: 4px 40px 4px 10px;
+        position: absolute;
+        bottom: 14px;
+        left: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 121%;
+        color: #FFFFFF;
+        background-color: #219653;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    &__text-blue {
+        padding: 2px 8px 2px 12px;
+        position: absolute;
+        bottom: 14px;
+        right: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        background-color: #01BEDE;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    &__title {
+        margin: 8px 0 10px 0;
+        width: 205px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #242424;
+    }
+
+    &__format {
+        margin: 0 0 0 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 121%;
+        color: #C0C0C0;
+    }
+
+    &__author {
+        margin: 5px 0 0 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 119%;
+        color: #616D75;
+    }
+}
