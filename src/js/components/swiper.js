@@ -9,7 +9,7 @@ var heroSlider = new Swiper('.hero-swiper', {effect: 'slide',
   },
 });
 
-var popularSlider = new Swiper('.popular-swiper', {effect: 'slide',
+var popularSlider = new Swiper('.main-slider', {effect: 'slide',
   cssMode: true,
   slidesPerView: 6,
   navigation: {
