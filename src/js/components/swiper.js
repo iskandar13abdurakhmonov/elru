@@ -26,3 +26,12 @@ var selectionSlider = new Swiper('.selection-swiper', {effect: 'slide',
     prevEl: '.swiper-button-prev',
   },
 });
+
+var topHundredSlider = new Swiper('.top100-swiper', {effect: 'slide',
+  cssMode: true,
+  slidesPerView: 2,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
