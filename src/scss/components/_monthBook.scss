@@ -1,0 +1,76 @@
+.monthBook {
+    padding: 16px 0 0 0;
+
+    &__head {
+        margin: 0 0 7px 0;
+    }
+}
+.main-monthBook {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+
+    &__bg {
+        position: relative;
+        max-width: 1145px;
+        max-height: 364px;
+        grid-column: span 10;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 215.38px;
+        height: 147.25px;
+        bottom: 187px;
+        left: 322px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26.7708px;
+        line-height: 119%;
+        color: #FFFFFF;
+        background-color: #01BEDE;
+        border-radius: 50%;
+        transform: rotate(-19deg);
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+    &__content {
+        grid-column: span 2;
+    }
+}
+.content-monthBook {
+    &__bg {
+        margin: 0 0 11px 0;
+        min-width: 214px;
+        min-height: 280px;
+        position: relative;
+    }
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    &__title {
+        margin: 0 0 25px 3px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #616D75;
+    }
+    &__author {
+        margin: 0 0 0 3px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #C0C0C0;
+    }
+}
