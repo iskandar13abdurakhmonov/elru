@@ -74,6 +74,12 @@
 }
 .bottom-header__dropdown {
     background-color: #01BEDE;
+    transition: 0.3s ease-in-out;
+}
+.bottom-header__dropdown:hover {
+    background-color: #09a4bf;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
 }
 .dropdown__btn {
     display: flex;

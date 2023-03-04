@@ -36,6 +36,12 @@
         color: #FFFFFF;
         background-color: #F7213E;
         border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+    &__link:hover {
+        background-color: #c80822;
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
     }
 }
 .hero-btn-next {
@@ -47,10 +53,15 @@
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    background-image: url('../img/hero/slider-arrow.svg');
+    background-image: url('../img/hero/arrow-next.svg');
     background-repeat: no-repeat;
     background-position: center;
-    transform: rotate(-180deg);
+    transition: 0.3s ease-in-out;
+}
+.hero-btn-next:hover {
+    background-color: #e8dddd;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
 }
 .hero-btn-next::after {
     position: absolute;
@@ -65,9 +76,14 @@
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    background-image: url('../img/hero/slider-arrow.svg');
+    background-image: url('../img/hero/arrow-prev.svg');
     background-repeat: no-repeat;
     background-position: center;
+}
+.hero-btn-prev:hover {
+    background-color: #e8dddd;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
 }
 .hero-btn-prev::after {
     position: absolute;
