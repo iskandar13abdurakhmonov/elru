@@ -25,6 +25,7 @@
         height: 147.25px;
         bottom: 187px;
         left: 322px;
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 700;
         font-size: 26.7708px;
@@ -67,6 +68,7 @@
     }
     &__author {
         margin: 0 0 0 3px;
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 500;
         font-size: 16px;

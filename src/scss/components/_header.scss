@@ -56,6 +56,7 @@
     right: -16px;
 }
 .breadcrumbs__link {
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -85,6 +86,7 @@
     display: flex;
     align-items: center;
     padding: 25px 43px 26px 30px;
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -103,6 +105,7 @@
 .header-search__input {
     padding: 13px 0 13px 10px;
     width: 545px;
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -148,6 +151,7 @@
     flex-direction: column;
 }
 .top-list__link {
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -160,6 +164,7 @@
     width: 100%;
     align-items: center;
     margin: 0 0 0 52px;
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -170,6 +175,7 @@
     margin: 0 5px 0 0;
 }
 .prostects__text {
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -177,6 +183,7 @@
     color: #616D75;
 }
 .profile__name {
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -184,6 +191,7 @@
     color: #616D75;
 }
 .profile__balance {
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

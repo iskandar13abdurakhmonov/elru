@@ -33,6 +33,7 @@
         margin: 0 73px 0 0;
     }
     &__link {
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -48,6 +49,7 @@
 
     &__title {
         margin: 0 0 22px 0;
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -55,6 +57,7 @@
         color: #FFFFFF;
     }
     &__text {
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -123,6 +126,7 @@
 .form-footer {
     &__label {
         margin: 0 0 0 0;
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -136,6 +140,7 @@
         margin: 0 10px 0 0;
         min-width: 260px;
         min-height: 40px;
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -146,6 +151,7 @@
     }
     &__btn {
         padding: 11px 43px 10px 43px;
+        font-family: var(--font-family);
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
