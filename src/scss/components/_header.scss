@@ -73,19 +73,89 @@
     display: flex;
     margin: 12px 0 0 0;
 }
+.dropdown {
+    position: relative;
+}
+.dropdown__content {
+    display: none;
+}
+.dropdown__content--active {
+    padding: 30px 30px 30px 30px;
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    max-width: 860px;
+    background-color: #fff;
+    border: 1px solid #DEDEDE;
+}
+.dropdown__list {
+    width: 170px;
+}
+.dropdown__list:first-child {
+    margin: 0 41px 0 0;
+}
+.dropdown__list:nth-child(2) {
+    margin: 0 40px 0 0;
+}
+.dropdown__list:nth-child(3) {
+    margin: 0 40px 0 0;
+}
+.dropdown__item:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+.dropdown__link {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #616D75;
+    transition: 0.3s ease-in-out;
+}
+.dropdown__link:hover {
+    text-decoration-line: underline;
+    color: #01BEDE;
+}
 .bottom-header__dropdown {
     background-color: #01BEDE;
+    position: relative;
     transition: 0.3s ease-in-out;
-}
-.bottom-header__dropdown:hover {
-    background-color: #09a4bf;
-    transition: 0.3s ease-in-out;
-    transform: scale(1.05);
 }
 .dropdown__btn {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 25px 43px 26px 30px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 119%;
+    color: #FFFFFF;
+}
+.dropdown__btn::before {
+    content: '';
+    background-image: url("../../img/categories-dropdown-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 29px;
+    left: 29px;
+    transition: 0.3s ease-in-out;
+}
+.dropdown__btn--active::before {
+    transition: 0.3s ease-in-out;
+    background-image: url("../../img/close_icon.svg");
+}
+.dropdown__text {
+    position: relative;
+    margin: 0 0 0 20px;
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
