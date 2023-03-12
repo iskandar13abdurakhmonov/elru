@@ -1,0 +1,117 @@
+.validation {
+    padding: 217px 0 0 0;
+    position: relative;
+    
+    &__container {
+        max-width: 910px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__close {
+        position: absolute;
+        top: 44px;
+        right: 67px;
+        display: inline-block;
+        min-width: 34px;
+        min-height: 34px;
+        background-image: url('/img/validation/close_icon.svg');
+    }
+}
+.toggle-validation {
+    margin: 0 0 33px 0;
+    display: flex;
+
+    &__button {
+        padding: 16px 0 16px 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        width: 455px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #242424;
+    }
+    &__button--active {
+        background-color: #F3F6F9;
+        border: 1px solid #ECECEC;
+    }
+}
+.form-validation {
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__inputs {
+        margin: 0 0 41px 0;
+        display: flex;
+    }
+    &__div {
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+    }
+    &__div:not(:last-child) {
+        margin: 0 30px 0 0;
+    }
+    &__label {
+        margin: 0 0 8px 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 119%;
+        color: #616D75;
+    }
+    &__input {
+        padding: 15px 0 15px 15px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 119%;
+        color: #616D75;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        border-radius: 5px
+    }
+    &__login {
+        padding: 16px 0 15px 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 119%;
+        color: #FFFFFF;
+        background-color: #01BEDE;
+        border-radius: 5px;
+    }
+}
+.bottom-validation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        margin: 0 3px 0 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #3E4549;
+    }
+    &__link {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #01BEDE;
+        text-decoration: underline;
+    }
+}

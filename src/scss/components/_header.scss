@@ -212,14 +212,6 @@
     margin: 15px 0 0 0;
     display: flex;
 }
-.profile__bg {
-    margin: 0 5px 0 0;
-}
-.profile__content {
-    margin: 3px 0 0 0;
-    display: flex;
-    flex-direction: column;
-}
 .top-list__link {
     font-family: var(--font-family);
     font-style: normal;
@@ -252,19 +244,28 @@
     line-height: 120%;
     color: #616D75;
 }
-.profile__name {
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 120%;
-    color: #616D75;
-}
-.profile__balance {
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 121%;
-    color: #616D75;
+.profile {
+    &__img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    &__text {
+        position: relative;
+        margin: 10px 0 0 10px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+        color: #616D75;
+   }
+   &__text::after {
+        position: absolute;
+        top: 0;
+        left: 51px;
+        width: 16px;
+        height: 16px;
+        content: '';
+        background-image: url("/img/grey-arrow.svg");
+   }
 }
