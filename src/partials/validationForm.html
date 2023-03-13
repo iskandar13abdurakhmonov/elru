@@ -5,101 +5,103 @@
             <button class="btn-reset toggle-validation__button toggle-validation__button--active" data-tabs-path="login">Вход</button>
             <button class="btn-reset toggle-validation__button" data-tabs-path="register">Регистрация</button>
         </div>
-        <div class="validation__content validation__content--active login" data-tabs-target="login">
-            <div>
-                <form action="" class="validation__form form-validation">
-                    <div class="form-validation__inputs">
-                        <div class="form-validation__div">
-                            <label for="" class="form-validation__label">Логин*</label>
-                            <input type="text" placeholder="valechka08" class="form-validation__input">
+        <div class="validation__flex">
+            <div class="validation__content validation__content--active login" data-tabs-target="login">
+                <div>
+                    <form action="" class="validation__form form-validation">
+                        <div class="form-validation__inputs">
+                            <div class="form-validation__div">
+                                <label for="" class="form-validation__label">Логин*</label>
+                                <input type="text" placeholder="valechka08" class="form-validation__input">
+                            </div>
+                            <div class="form-validation__div">
+                                <label for="" class="form-validation__label">Пароль*</label>
+                                <input type="password" placeholder="valechka08" class="form-validation__input">
+                            </div>
                         </div>
-                        <div class="form-validation__div">
-                            <label for="" class="form-validation__label">Пароль*</label>
-                            <input type="password" placeholder="valechka08" class="form-validation__input">
-                        </div>
+                        <button class="btn-reset form-validation__login">Войти</button>
+                    </form>
+                    <div class="form-validation__bottom bottom-validation">
+                        <p class="bottom-validation__text">
+                            Забыли пароль?
+                        </p>
+                        <a href="#" class="bottom-validation__link">
+                            Восстановить
+                        </a>
                     </div>
-                    <button class="btn-reset form-validation__login">Войти</button>
-                </form>
-                <div class="form-validation__bottom bottom-validation">
-                    <p class="bottom-validation__text">
-                        Забыли пароль?
-                    </p>
-                    <a href="#" class="bottom-validation__link">
-                        Восстановить
-                    </a>
                 </div>
             </div>
-        </div>
-        <div class="validation__content registration" data-tabs-target="register">
-            <form action="" class="form-validation">
-                <div class="form-validation__inputs registration__inputs">
-                    <div class="form-validation__div">
-                        <label for="" class="form-validation__label">Имя*</label>
-                        <input type="text" placeholder="Валентина" class="form-validation__input">
+            <div class="validation__content registration" data-tabs-target="register">
+                <form action="" class="form-validation">
+                    <div class="form-validation__inputs registration__inputs">
+                        <div class="form-validation__div">
+                            <label for="" class="form-validation__label">Имя*</label>
+                            <input type="text" placeholder="Валентина" class="form-validation__input">
+                        </div>
+                        <div class="form-validation__div">
+                            <label for="" class="form-validation__label">Фамилия*</label>
+                            <input type="text" placeholder="Лихачева" class="form-validation__input">
+                        </div>
                     </div>
-                    <div class="form-validation__div">
-                        <label for="" class="form-validation__label">Фамилия*</label>
-                        <input type="text" placeholder="Лихачева" class="form-validation__input">
+                    <div class="form-validation__inputs registration__inputs2">
+                        <div class="form-validation__div">
+                            <label for="" class="form-validation__label registration__label">Отчество*</label>
+                            <input type="text" placeholder="Владимеровна" class="form-validation__input">
+                        </div>
+                        <div class="form-validation__div">
+                            <label for="" class="form-validation__label registration__label">Дата рождения (дд&nbsp;/ мм&nbsp;/ гггг)*</label>
+                            <input type="date" placeholder="valechka08" class="form-validation__input">
+                        </div>
                     </div>
-                </div>
-                <div class="form-validation__inputs registration__inputs2">
-                    <div class="form-validation__div">
-                        <label for="" class="form-validation__label registration__label">Отчество*</label>
-                        <input type="text" placeholder="Владимеровна" class="form-validation__input">
+                    <div class="form-validation__gender gender-form">
+                        <legend for="" class="gender-form__title">Ваш пол:</legend>
+                        <input id="male" class="gender-form__checkbox" type="checkbox">
+                        <label for="male" class="gender-form__label">Мужской</label>
+                        <input id="female" class="gender-form__checkbox" type="checkbox">
+                        <label for="female" class="gender-form__label">Женский</label>
                     </div>
-                    <div class="form-validation__div">
-                        <label for="" class="form-validation__label registration__label">Дата рождения (дд&nbsp;/ мм&nbsp;/ гггг)*</label>
-                        <input type="date" placeholder="valechka08" class="form-validation__input">
+                    <div class="form-validation__profile-custom custom-profile">
+                        <p class="custom-profile__text">
+                            Выберите аватарку профиля:
+                        </p>
+                        <div class="custom-profile__box">
+                            <input class="btn-reset custom-profile__input" type="file" placeholder="Прикрепить файл">
+                        </div>
                     </div>
-                </div>
-                <div class="form-validation__gender gender-form">
-                    <legend for="" class="gender-form__title">Ваш пол:</legend>
-                    <input id="male" class="gender-form__checkbox" type="checkbox">
-                    <label for="male" class="gender-form__label">Мужской</label>
-                    <input id="female" class="gender-form__checkbox" type="checkbox">
-                    <label for="female" class="gender-form__label">Женский</label>
-                </div>
-                <div class="form-validation__profile-custom custom-profile">
-                    <p class="custom-profile__text">
-                        Выберите аватарку профиля:
-                    </p>
-                    <div class="custom-profile__box">
-                        <input class="btn-reset custom-profile__input" type="file" placeholder="Прикрепить файл">
+                    <div class="form-validation__profile-default default-profile">
+                        <p class="default-profile__text">
+                            Или выберите готовый:
+                        </p>
+                        <ul class="default-profile__list list-reset">
+                            <li class="default-profile__item">
+                                <img src="../img/validation/default-prifile1.svg" alt="иконка профиля" class="default-prifile__img">
+                            </li>
+                            <li class="default-profile__item">
+                                <img src="../img/validation/default-prifile2.svg" alt="иконка профиля" class="default-prifile__img">
+                            </li>
+                            <li class="default-profile__item">
+                                <img src="../img/validation/default-prifile3.svg" alt="иконка профиля" class="default-prifile__img">
+                            </li>
+                            <li class="default-profile__item">
+                                <img src="../img/validation/default-prifile4.svg" alt="иконка профиля" class="default-prifile__img">
+                            </li>
+                            <li class="default-profile__item">
+                                <img src="../img/validation/default-prifile5.svg" alt="иконка профиля" class="default-prifile__img">
+                            </li>
+                            <li class="default-profile__item">
+                                <img src="../img/validation/default-prifile6.svg" alt="иконка профиля" class="default-prifile__img">
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="form-validation__profile-default default-profile">
-                    <p class="default-profile__text">
-                        Или выберите готовый:
-                    </p>
-                    <ul class="default-profile__list list-reset">
-                        <li class="default-profile__item">
-                            <img src="../img/validation/default-prifile1.svg" alt="иконка профиля" class="default-prifile__img">
-                        </li>
-                        <li class="default-profile__item">
-                            <img src="../img/validation/default-prifile2.svg" alt="иконка профиля" class="default-prifile__img">
-                        </li>
-                        <li class="default-profile__item">
-                            <img src="../img/validation/default-prifile3.svg" alt="иконка профиля" class="default-prifile__img">
-                        </li>
-                        <li class="default-profile__item">
-                            <img src="../img/validation/default-prifile4.svg" alt="иконка профиля" class="default-prifile__img">
-                        </li>
-                        <li class="default-profile__item">
-                            <img src="../img/validation/default-prifile5.svg" alt="иконка профиля" class="default-prifile__img">
-                        </li>
-                        <li class="default-profile__item">
-                            <img src="../img/validation/default-prifile6.svg" alt="иконка профиля" class="default-prifile__img">
-                        </li>
-                    </ul>
-                </div>
-                <div class="form-validation__acceptance acceptance-form">
-                    <input type="checkbox" class="acceptance-form__input">
-                    <label for="checkbox" class="acceptance-form__label">Я принимаю условия пользовательского соглашения</label>
-                </div>
-            </form>
-            <button class="registration__next-btn btn-reset form-validation__login">
-                Далее
-            </button>
+                    <div class="form-validation__acceptance acceptance-form">
+                        <input type="checkbox" class="acceptance-form__input">
+                        <label for="checkbox" class="acceptance-form__label">Я принимаю условия пользовательского соглашения</label>
+                    </div>
+                </form>
+                <button class="registration__next-btn btn-reset form-validation__login">
+                    Далее
+                </button>
+            </div>
         </div>
     </div>
     <a href="index.html" class="validation__close"></a>
