@@ -8,6 +8,15 @@
         display: flex;
         flex-direction: column;
     }
+    &__content {
+        display: none;
+        visibility: hidden;
+
+        &--active {
+            display: block;
+            visibility: visible;
+        }
+    }
     &__close {
         position: absolute;
         top: 44px;
@@ -21,6 +30,7 @@
 .toggle-validation {
     margin: 0 0 33px 0;
     display: flex;
+    border-bottom: 1px solid #ECECEC;
 
     &__button {
         padding: 16px 0 16px 0;
@@ -36,7 +46,9 @@
     }
     &__button--active {
         background-color: #F3F6F9;
-        border: 1px solid #ECECEC;
+        border-top: 1px solid #ECECEC;
+        border-right: 1px solid #ECECEC;
+        border-left: 1px solid #ECECEC;
     }
 }
 .form-validation {
@@ -113,5 +125,109 @@
         line-height: 150%;
         color: #01BEDE;
         text-decoration: underline;
+    }
+}
+.registration {
+    display: flex;
+    flex-direction: column;
+
+    &__inputs {
+        margin: 0 0 17px 0;
+    }
+    &__inputs2 {
+        margin: 0 0 30px 0;
+    }
+    &__label {
+        margin: 0 0 9px 0;
+    }
+}
+.gender-form {
+    padding: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+
+    &__title {
+        margin: 0 35px 0 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #3E4549;
+    }
+    &__checkbox {
+        margin: 0 10px 0 0;
+        width: 25px;
+        height: 25px;
+    }
+    &__label {
+        margin: 0 0 0 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 117%;
+        color: #616D75;
+    }
+    &__label:not(:last-child) {
+        margin: 0 35px 0 0;
+    }
+}
+.custom-profile {
+    padding: 31px 0 38px 0;
+
+    &__text {
+        margin: 0 0 35px 2px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #3E4549;
+    }
+    &__input {
+        background-color: #01BEDE;
+    }
+}
+.default-profile {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        margin: -4px 31px 0 2px;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #3E4549;
+    }
+    &__list {
+        margin: 7px 0 0 0;
+        display: flex;
+    }
+    &__item:not(:last-child) {
+        margin: 0 25px 0 0;
+    }
+}
+.acceptance-form {
+    padding: 26px 0 0 0;
+    display: flex;
+    align-items: center;
+
+    &__input{
+        margin: 0 9px 0 0;
+        width: 25px;
+        height: 25px;
+    }
+    &__label {
+        margin: 0 0 0 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #616D75;
     }
 }
