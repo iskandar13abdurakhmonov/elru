@@ -117,9 +117,22 @@
                                     <input type="password" placeholder="" class="form-validation__input">
                                 </div>
                             </div>
-                            <button type="button" class="btn-reset form-validation__login form-validation__password">Получить пароль</button>
+                            <button type="button" onclick="switchTab('step-3')" class="btn-reset form-validation__login form-validation__password">Получить пароль</button>
                             <button type="button" onclick="switchTab('step-1')" class=" btn-reset stepper-button form-validation__back">Назад</button>
 
+                        </form>
+                    </div>
+
+                    <div class="stepper-content" id="step-3">
+                        <form action="" class="validation__form form-validation">
+                            <p class="form-validation__red-alert">
+                                Внимание! Пароль из&nbsp;сообщения является паролем для входа в&nbsp;ваш аккаунт. Не&nbsp;потеряйте его!
+                            </p>
+                            <div class="form-validation__div">
+                                <label for="" class="form-validation__label">Введите пароль из&nbsp;сообщения*</label>
+                                <input type="text" placeholder="valechka08" class="form-validation__input form-validation__input--long">
+                            </div>
+                            <button type="submit" class="btn-reset form-validation__login form-validation__password">Подвердить</button>
                         </form>
                     </div>
                 </div>

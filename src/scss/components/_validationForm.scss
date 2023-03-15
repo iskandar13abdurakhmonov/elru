@@ -80,6 +80,15 @@
         line-height: 119%;
         color: #616D75;
     }
+    &__red-alert {
+        margin: 0 0 15px 0;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #EA3B3B;
+    }
     &__input {
         padding: 15px 0 15px 15px;
         font-family: var(--font-family);
@@ -90,7 +99,12 @@
         color: #616D75;
         background: #FFFFFF;
         border: 1px solid #DEDEDE;
-        border-radius: 5px
+        border-radius: 5px;
+
+        &--long {
+            margin: 0 0 40px 0;
+            width: 910px;
+        }
     }
     &__login {
         width: 100%;
